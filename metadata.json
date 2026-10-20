@@ -1,0 +1,6 @@
+{
+  "name": "AFTERLIGHT",
+  "description": "A NASA SPHEREx astronomical discovery platform for exploring multi-epoch infrared observations, 102-band spectra, and moving-object candidates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
