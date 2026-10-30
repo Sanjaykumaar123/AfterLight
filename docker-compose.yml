@@ -1,0 +1,21 @@
+services:
+  afterlight:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: afterlight:latest
+    container_name: afterlight-app
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - ENVIRONMENT=production
+      - LOG_LEVEL=INFO
+    volumes:
+      - afterlight-data:/app/backend/data
+    restart: unless-stopped
+
+volumes:
+  afterlight-data:
+
